@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --dim-gray: #707078;
+    --dim-gray: #292954;
     --cadet-gray: #87919E;
     --light-gray: #E5E7EB;
-    --columbia-blue: #CDE6F5;
+    --columbia-blue: #2297e1;
     --white: #FFF;
     --black: #000;
     --roboto-font: 'Roboto', sans-serif;
@@ -14,4 +14,82 @@
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--roboto-font);
+}
+
+.header {
+    height: 90vh;
+    background: var(--dim-gray);
+    color: var(--white);
+    padding: 20px 250px 20px 250px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 150px;
+    align-items: baseline;
+}
+
+ul {
+    list-style: none;
+    margin-left: auto;
+    gap: 30px;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+li > a:hover {
+    color: var(--cadet-gray);
+}
+
+.presentation {
+    height: 40%;
+    width: 540px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.presentation > p {
+    font-size: 18px;
+    color: var(--cadet-gray);
+}
+
+.img-placeholder {
+    width: 400px;
+    height: 250px;
+    background: var(--cadet-gray);
+    justify-content: center;
+    align-items: center;
+    color: var(--dim-gray);
+}
+
+.presentation > button {
+    background: var(--columbia-blue);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold ;
+    color: var(--light-gray);
+}
+
+.presentation > button:hover {
+    background: var(--white);
+    color: var(--columbia-blue);
+    transition: 0.4s ease-in-out;
 }
