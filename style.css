@@ -79,7 +79,7 @@ li > a:hover {
     border-radius: 5px;
 }
 
-.presentation > button {
+button {
     background: var(--columbia-blue);
     border: none;
     border-radius: 10px;
@@ -89,7 +89,7 @@ li > a:hover {
     color: var(--light-gray);
 }
 
-.presentation > button:hover {
+button:hover {
     background: var(--white);
     color: var(--columbia-blue);
     transition: 0.4s ease-in-out;
@@ -151,4 +151,40 @@ li > a:hover {
     font-weight: bold;
     align-self: flex-end;
     margin-right: 350px;
+}
+
+.sign-up-section {
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    height: 50vh;
+}
+
+.button-block {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--columbia-blue);
+    width: 60%;
+    height: 30%;
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.button-block > h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.button-block > p {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: var(--dim-gray);
+}
+
+.button-block > button {
+    border: 2px solid var(--white);
 }
